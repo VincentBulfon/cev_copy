@@ -1,0 +1,78 @@
+//html
+html {
+  display: block;
+  min-width: 320px;
+}
+
+*[tabindex]:focus-visible {
+  outline: #5d9dd5 solid 1px;
+  box-shadow: 0 0px 8px #5e9ed6;
+}
+
+// box sizing
+* {
+  box-sizing: border-box;
+}
+// screen readers only
+.sro {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+// block level images
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+a[href],
+input[type='submit'],
+input[type='image'],
+input[type='chekbox'],
+input[type='radio'],
+label[for],
+select,
+button,
+.pointer {
+  cursor: pointer;
+}
+
+p {
+  max-width: calc(16px * 30);
+}
+
+a {
+  color: inherit;
+  transition: 0.175s;
+}
+
+button {
+  background-color: transparent;
+}
+
+input:focus,
+textarea {
+  outline: none;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.error {
+  color: red;
+}

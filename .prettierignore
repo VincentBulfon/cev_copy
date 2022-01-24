@@ -1,0 +1,13 @@
+#ignore artifacts
+nexus-typegen.ts
+shema.graphql
+tsconfig.json
+node_modules/**
+dist/**
+public/**
+build/**
+*.log
+*.lock
+*.json
+*.md
+.vscode

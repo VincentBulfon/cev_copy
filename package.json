@@ -1,0 +1,43 @@
+{
+  "name": "cev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "apollo-gen": "node node_scripts/cleanup.js && apollo codegen:generate --target typescript --globalTypesFile=operations/__generated__/globalTypes.ts --excludes=node_modules/* --includes=operations/**/*.ts --endpoint http://localhost:4000/ --tagName=gql --outputFlat operations/__generated__",
+    "apollo-gen-prod": "node node_scripts/cleanup.js && apollo codegen:generate --target typescript --globalTypesFile=operations/__generated__/globalTypes.ts --excludes=node_modules/* --includes=operations/**/*.ts --endpoint https://cev-api.herokuapp.com/ --tagName=gql --outputFlat operations/__generated__"
+  },
+  "resolutions": {
+    "graphql": "^15.5.1"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.8",
+    "apollo": "^2.33.6",
+    "dayjs": "^1.10.6",
+    "graphql": "^15.5.1",
+    "mapbox-gl": "^2.4.0",
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.34.0",
+    "sharp": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/react": "17.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^27.0.1",
+    "ts-jest": "^27.0.0",
+    "typescript": "^4.3.2"
+  }
+}

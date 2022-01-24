@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Geomanist';
+  src: url(/fonts/geomanist-regular.woff) format('woff'),
+    url(/fonts/geomanist-regular.woff2) format('woff2');
+  font-style: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geomanist bold';
+  src: url(/fonts/geomanist-bold.woff) format('woff'),
+    url(/fonts/geomanist-bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geomanist extra light';
+  src: url(/fonts/geomanist-extralight.woff) format('woff'),
+    url(/fonts/geomanist-extralight.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(/fonts/Rubik-VariableFont_wght.ttf) format('truetype'),
+    url(/fonts/Rubik-VariableFont_wght.woff) format('woff'),
+    url(/fonts/Rubik-VariableFont_wght.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 700;
+}

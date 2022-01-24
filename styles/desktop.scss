@@ -1,0 +1,118 @@
+@media (min-width: 452px) {
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &::after {
+      display: none;
+    }
+  }
+  .footer__section__contact {
+    float: none;
+    width: auto;
+  }
+
+  .content__wrapper__content {
+    max-width: 522px;
+  }
+  .cta__wrapper {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 2.779em 0 0;
+  }
+}
+
+// @media (min-width: 660px) {
+//   .hero {
+//     &__title__text {
+//       max-width: 400px;
+//     }
+//   }
+
+//   .content__wrapper__container,
+//   .main__wrapper {
+//     display: grid;
+//     column-gap: 42px;
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+//   .content__wrapper {
+//     &--gd {
+//       padding: 2.779em 0 0;
+//     }
+//     &__container {
+//       margin: 0 auto;
+//       width: 100%;
+//       max-width: 1086px;
+//     }
+//     &__content {
+//       grid-column: 2/3;
+//       &--left {
+//         grid-column: 1/2;
+//       }
+//     }
+//     &__img {
+//       grid-row: 1/2;
+//       display: block;
+//       grid-column: 1/2;
+//       max-width: 505px;
+//       align-self: center;
+//       position: relative;
+//       right: calc(10.153256705% / 2);
+//       &--right {
+//         right: 0;
+//         grid-column: 2/3;
+//         left: calc(10.153256705% / 2);
+//       }
+//       &--sticky {
+//         position: sticky;
+//         margin: 17.886em 0 171.674px;
+//         align-self: flex-start;
+//         top: calc(100px + 5.2407779283vw);
+//       }
+//     }
+//   }
+
+//   .main__wrapper {
+//     padding: 0 6.5625% 0;
+//     &--lb {
+//       background-color: $very-light-blue;
+//     }
+//   }
+
+//   .content__container {
+//     &--gr {
+//       grid-column: 2/3;
+//     }
+//     &--gl {
+//       grid-column: 1/2;
+//     }
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .hero {
+//     div:first-child(:not(.hero__img--index)) {
+//       height: calc(235px + 45px + 5.2407779283vw);
+//     }
+
+//     &__title:not(.hero__title--index) {
+//       margin-top: -237px;
+//     }
+//     &__text:not(.title__text--index) {
+//       min-width: 600px;
+//       font-size: 3.861em;
+//       padding: 176px 0 1.5380464112em 6.5625%;
+//     }
+//   }
+//   .content__wrapper,
+//   .footer {
+//     font-size: 1.389em;
+//   }
+//   .cta {
+//     font-size: 1em;
+//     max-width: 410px;
+//     &__content__text {
+//       margin-left: 17px;
+//     }
+//   }
+// }
